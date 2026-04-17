@@ -42,7 +42,6 @@ social:
 
 # ----- Build -----
 markdown: kramdown
-permalink: /:slug/
 timezone: Europe/Rome
 exclude:
   - README.md
