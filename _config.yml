@@ -48,3 +48,9 @@ exclude:
   - .gitignore
   - Gemfile
   - Gemfile.lock
+
+# ----- Plugins (per GitHub Pages) -----
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
