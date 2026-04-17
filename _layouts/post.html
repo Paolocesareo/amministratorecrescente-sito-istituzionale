@@ -8,9 +8,21 @@ layout: default
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d %B %Y" }}</time>
       {% if page.author %}· {{ page.author }}{% endif %}
+      {% if page.reading_time %}· {{ page.reading_time }} min di lettura{% endif %}
     </p>
   </header>
+
+  {% if page.cover %}
+  <figure class="post-cover">
+    <img src="{{ page.cover | relative_url }}" alt="{{ page.title }}">
+  </figure>
+  {% endif %}
+
   <div class="container post-body">
     {{ content }}
+  </div>
+
+  <div class="container">
+    {% include cta-masterclass.html %}
   </div>
 </article>

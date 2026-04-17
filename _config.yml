@@ -54,3 +54,13 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
   - jekyll-feed
+
+# ----- Disabilita plugin automatici problematici di GitHub Pages (jekyll-theme-primer) -----
+relative_links:
+  enabled: false
+titles_from_headings:
+  enabled: false
+readme_index:
+  enabled: false
+optional_front_matter:
+  remove_originals: true
