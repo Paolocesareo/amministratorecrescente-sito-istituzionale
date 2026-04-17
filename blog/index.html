@@ -1,0 +1,22 @@
+---
+layout: page
+title: "Blog"
+subtitle: "Consigli pratici, strumenti e riflessioni per amministratori di condominio che vogliono crescere."
+permalink: /blog/
+description: "Il blog di Amministratore Crescente™ — Paolo Cesareo: articoli su produttività, marketing, coaching e strategie di business condominiale."
+---
+
+<div class="post-list">
+  {% for post in site.posts %}
+  <article class="post-item">
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="post-meta">
+      <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time>
+      {% if post.category %} · {{ post.category }}{% endif %}
+    </p>
+    {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 220 }}</p>{% endif %}
+  </article>
+  {% else %}
+  <p>Presto online i primi articoli. Nel frattempo <a href="{{ '/risorse-gratuite/' | relative_url }}">iscriviti alla newsletter</a> per non perdere nulla.</p>
+  {% endfor %}
+</div>

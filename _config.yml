@@ -1,0 +1,51 @@
+# ============================================================
+# Configurazione generale del sito — Amministratore Crescente™
+# ============================================================
+# Modifica qui i dati globali e si aggiornano ovunque.
+# Ogni volta che cambi questo file, fai push: GitHub Pages
+# ricostruisce il sito in ~1 minuto.
+# ============================================================
+
+title: "Amministratore Crescente™"
+tagline: "Il metodo di Paolo Cesareo per far crescere il tuo studio di amministrazione condominiale"
+description: "Coaching e formazione per amministratori di condominio. Masterclass in 8 settimane, Metodo V3, risorse gratuite per far crescere il tuo business condominiale."
+author: "Paolo Cesareo"
+url: "https://amministratorecrescente.net"
+baseurl: ""
+
+# ----- Dati brand -----
+brand:
+  trademark: "Amministratore Crescente™"
+  company: "C.S.F. Lab Srls"
+  vat: "P.IVA 09026981218"
+  address: "Viale Augusto, 132 — 80125 Napoli"
+
+# ----- Contatti pubblici del brand -----
+contact:
+  email: "info@amministratorecrescente.it"
+  phone: "06 56 54 70 13"
+  whatsapp: "+39 349 00 79 677"
+  whatsapp_link: "https://wa.me/393490079677"
+
+# ----- Kartra funnel links (da compilare) -----
+kartra:
+  masterclass_candidacy: "#kartra-url-candidatura-masterclass"
+  lead_magnet: "#kartra-url-lead-magnet"
+  newsletter_embed: "#kartra-form-newsletter"
+
+# ----- Social (opzionale, attiva se presente) -----
+social:
+  linkedin: ""
+  youtube: ""
+  facebook: ""
+  instagram: ""
+
+# ----- Build -----
+markdown: kramdown
+permalink: /:slug/
+timezone: Europe/Rome
+exclude:
+  - README.md
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock

@@ -1,0 +1,57 @@
+---
+layout: page
+title: "Contatti"
+subtitle: "Per la Masterclass usa la candidatura online; per tutto il resto scrivimi o scrivi alla segreteria."
+description: "Contatti Amministratore Crescente™ — Paolo Cesareo: email, telefono, WhatsApp e sede operativa a Napoli."
+---
+
+<div class="cards">
+  <div class="card">
+    <h3>Per la Masterclass</h3>
+    <p>La candidatura passa dalla consulenza strategica gratuita online.</p>
+    <p><a href="{{ site.kartra.masterclass_candidacy }}" class="btn btn-primary">Candidati ora</a></p>
+  </div>
+  <div class="card">
+    <h3>Email</h3>
+    <p><a href="mailto:{{ site.contact.email }}">{{ site.contact.email }}</a></p>
+    <p>Risposta entro 48h lavorative.</p>
+  </div>
+  <div class="card">
+    <h3>Telefono e WhatsApp</h3>
+    <p>📞 <a href="tel:+39{{ site.contact.phone | remove: ' ' }}">{{ site.contact.phone }}</a></p>
+    <p>💬 <a href="{{ site.contact.whatsapp_link }}">WhatsApp {{ site.contact.whatsapp }}</a></p>
+  </div>
+  <div class="card">
+    <h3>Sede</h3>
+    <p>{{ site.brand.company }}</p>
+    <p>{{ site.brand.address }}</p>
+    <p>{{ site.brand.vat }}</p>
+  </div>
+</div>
+
+<h2>Form diretto</h2>
+<!-- Opzione consigliata: form embed Kartra (se disponibile) oppure Formspree.
+     Sostituire action="" con l'endpoint giusto quando attivato. -->
+<form action="[[TODO: endpoint Kartra o Formspree]]" method="POST">
+  <label>
+    Nome e cognome
+    <input type="text" name="name" required>
+  </label>
+  <label>
+    Email
+    <input type="email" name="email" required>
+  </label>
+  <label>
+    Oggetto
+    <input type="text" name="subject">
+  </label>
+  <label>
+    Messaggio
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+  <label style="flex-direction:row; align-items:center; gap:0.5em;">
+    <input type="checkbox" name="privacy" required style="width:auto;">
+    Ho letto e accetto la <a href="{{ '/privacy/' | relative_url }}">privacy policy</a>.
+  </label>
+  <button type="submit" class="btn btn-primary">Invia messaggio</button>
+</form>

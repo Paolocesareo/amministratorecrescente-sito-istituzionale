@@ -1,0 +1,75 @@
+---
+layout: default
+title: "Home"
+description: "Coaching e formazione per amministratori di condominio. La Masterclass Amministratore Crescente™ di Paolo Cesareo: far crescere studio, azienda e business condominiale in 8 settimane."
+---
+
+<section class="home-hero">
+  <div class="container">
+    <p class="eyebrow" style="color: var(--color-accent);">Amministratore Crescente™</p>
+    <h1>Il metodo che fa crescere <span>il tuo studio di amministrazione condominiale</span></h1>
+    <p class="subtitle">
+      <!-- TODO: sottotitolo definitivo (max 2 righe). Bozza dal backup:
+      "Il sistema di Paolo Cesareo per amministratori di condominio
+      che vogliono uno studio prospero, organizzato e indipendente dalla propria presenza quotidiana." -->
+      [[TODO: sottotitolo hero — 2 righe, beneficio principale per l'amministratore]]
+    </p>
+    <div class="cta-row">
+      <a href="{{ site.kartra.masterclass_candidacy }}" class="btn btn-primary btn-lg">Candidati alla Masterclass</a>
+      <a href="{{ '/metodo/' | relative_url }}" class="btn btn-secondary btn-lg" style="color:#fff;border-color:#fff;">Scopri il Metodo V3</a>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Perché Amministratore Crescente™</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Metodo provato</h3>
+        <p>[[TODO: claim breve su percentuale di crescita osservata nei partecipanti Masterclass]]</p>
+      </div>
+      <div class="card">
+        <h3>Gruppo di pari</h3>
+        <p>Max 10 amministratori per edizione: confronto vero con colleghi imprenditori, non platee da 500 persone.</p>
+      </div>
+      <div class="card">
+        <h3>Coaching 1:1</h3>
+        <p>[[TODO: descrivere in 2 righe il coaching individuale incluso nella Masterclass]]</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <h2>Chi è Paolo Cesareo</h2>
+    <p>
+      <!-- Estratto dal backup 'chi-sono.html' -->
+      Amministratore di condominio abilitato dal 1998, avvocato laureato in Giurisprudenza con tesi sulle liti condominiali,
+      fondatore dell'APACI (Associazione Professionale Amministratori Condominiali e Immobiliari) e del metodo
+      Amministratore Crescente™. Da oltre 15 anni forma colleghi amministratori in tutta Italia.
+    </p>
+    <p><a href="{{ '/chi-sono/' | relative_url }}" class="btn btn-secondary">Leggi la storia</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>Dal blog</h2>
+    <div class="post-list">
+      {% for post in site.posts limit: 3 %}
+      <article class="post-item">
+        <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+        <p class="post-meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%d %B %Y" }}</time></p>
+        {% if post.excerpt %}<p>{{ post.excerpt | strip_html | truncate: 160 }}</p>{% endif %}
+      </article>
+      {% else %}
+      <p>[[TODO: selezionare 3 articoli del vecchio blog da ripubblicare o scrivere i primi 3 nuovi]]</p>
+      {% endfor %}
+    </div>
+    <p style="margin-top: var(--space-md);"><a href="{{ '/blog/' | relative_url }}" class="btn btn-secondary">Tutti gli articoli</a></p>
+  </div>
+</section>
+
+{% include cta-masterclass.html %}

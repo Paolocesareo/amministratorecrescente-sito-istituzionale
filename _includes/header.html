@@ -1,0 +1,29 @@
+<!-- ============================================================
+     MENU PRINCIPALE — un solo file, rispecchiato su TUTTE le pagine
+     Per aggiungere/rimuovere una voce: modifica solo questo file.
+     ============================================================ -->
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="{{ '/' | relative_url }}" class="brand">
+      <span class="brand-mark">AC<sup>™</sup></span>
+      <span class="brand-name">Amministratore Crescente</span>
+    </a>
+
+    <button class="menu-toggle" aria-label="Apri menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav id="site-nav" class="site-nav" aria-label="Menu principale">
+      <ul>
+        <li><a href="{{ '/' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/chi-sono/' | relative_url }}">Chi sono</a></li>
+        <li><a href="{{ '/metodo/' | relative_url }}">Metodo</a></li>
+        <li><a href="{{ '/masterclass/' | relative_url }}" class="highlight">Masterclass</a></li>
+        <li><a href="{{ '/risorse-gratuite/' | relative_url }}">Risorse</a></li>
+        <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+        <li><a href="{{ '/contatti/' | relative_url }}">Contatti</a></li>
+      </ul>
+      <a href="{{ site.kartra.masterclass_candidacy }}" class="btn btn-primary nav-cta">Candidati</a>
+    </nav>
+  </div>
+</header>

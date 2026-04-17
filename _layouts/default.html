@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title }} — {{ site.title }}{% else %}{{ site.title }} — {{ site.tagline }}{% endif %}</title>
+
+  <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="author" content="{{ site.author }}">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <meta property="og:image" content="{{ '/assets/img/og-default.jpg' | absolute_url }}">
+  <meta property="og:locale" content="it_IT">
+
+  <!-- Canonical -->
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+
+  <!-- Icone -->
+  <link rel="icon" type="image/png" href="{{ '/assets/img/favicon.png' | relative_url }}">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <!-- Font: Inter (Google Fonts). Commenta la riga se non vuoi Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- TODO: Google Analytics 4 — sostituire G-XXXXXXX con il tuo ID quando pronto
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+  {% include header.html %}
+
+  <main class="site-main">
+    {{ content }}
+  </main>
+
+  {% include footer.html %}
+
+  <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
+</body>
+</html>
