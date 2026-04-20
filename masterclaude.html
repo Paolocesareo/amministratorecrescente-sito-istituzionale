@@ -10,18 +10,63 @@ sitemap: false
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>MasterClaude Amministratore Crescente — Lista d'Attesa</title>
-<meta name="description" content="Entra in lista d'attesa: accesso anticipato di 7 giorni e quota scontata riservata rispetto all'apertura pubblica.">
+<meta name="description" content="Costruisci il tuo Studio a Trazione AI con la MasterClaude di Amministratore Crescente. Entra in lista d'attesa: 7 giorni di anticipo e quota riservata.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --primary: #0f2a4a;
+    --primary-dark: #081a30;
+    --accent: #d4a24c;
+    --accent-dark: #b2842f;
+    --bg: #ffffff;
+    --bg-alt: #f6f7f9;
+    --text: #1a1d23;
+    --text-muted: #5a6270;
+    --border: #e3e6ec;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fafafa;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg-alt);
     -webkit-font-smoothing: antialiased;
   }
+  .brand-bar {
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+    padding: 18px 24px;
+    text-align: center;
+  }
+  .brand {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .brand-mark {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background: var(--primary);
+    color: var(--accent);
+    font-weight: 800;
+    font-size: 16px;
+    border-radius: 8px;
+    letter-spacing: 0.02em;
+  }
+  .brand-mark sup { font-size: 9px; margin-left: 1px; color: var(--accent); }
+  .brand-name {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--primary);
+    letter-spacing: -0.01em;
+  }
   .wrap {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 56px 24px 96px;
   }
@@ -29,52 +74,75 @@ sitemap: false
     text-transform: uppercase;
     letter-spacing: .12em;
     font-size: 13px;
-    font-weight: 600;
-    color: #6b7280;
-    margin-bottom: 20px;
+    font-weight: 700;
+    color: var(--accent-dark);
+    margin-bottom: 16px;
   }
   h1 {
-    font-size: 38px;
-    line-height: 1.15;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: clamp(2rem, 3.5vw + 1rem, 3.2rem);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--primary-dark);
     margin-bottom: 24px;
   }
   h1 em {
     font-style: normal;
-    color: #1f6eb8;
+    color: var(--accent-dark);
   }
   .lede {
     font-size: 19px;
-    color: #374151;
+    color: var(--text-muted);
     margin-bottom: 40px;
+    line-height: 1.55;
   }
+  .lede strong { color: var(--text); }
   h2 {
     font-size: 22px;
     font-weight: 700;
-    margin: 48px 0 16px;
+    color: var(--primary);
+    margin: 0 0 16px;
     letter-spacing: -0.01em;
   }
-  p { margin-bottom: 16px; color: #1f2937; }
-  ul { margin: 0 0 20px 20px; }
-  li { margin-bottom: 10px; color: #1f2937; }
-  li strong { color: #111827; }
+  p { margin-bottom: 16px; color: var(--text); }
+  ul { margin: 0 0 16px 22px; }
+  li { margin-bottom: 10px; color: var(--text); }
+  li strong { color: var(--primary-dark); }
   .box {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
     padding: 32px 28px;
-    margin: 40px 0;
+    margin: 32px 0;
     box-shadow: 0 1px 2px rgba(0,0,0,.03);
   }
-  .box h2 {
-    margin-top: 0;
-    color: #1f6eb8;
+  .proof {
+    background: var(--primary);
+    color: #fff;
+    border-radius: 14px;
+    padding: 36px 32px;
+    margin: 40px 0;
   }
+  .proof .number {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1;
+    color: var(--accent);
+    letter-spacing: -0.03em;
+    margin-bottom: 12px;
+  }
+  .proof h2 { color: #fff; margin: 0 0 12px; font-size: 20px; }
+  .proof p {
+    color: rgba(255,255,255,.88);
+    font-size: 16px;
+    margin-bottom: 0;
+    line-height: 1.6;
+  }
+  .proof strong { color: var(--accent); font-weight: 700; }
   .form-wrap {
-    background: #fff;
-    border: 2px solid #1f6eb8;
-    border-radius: 12px;
+    background: var(--bg);
+    border: 2px solid var(--accent);
+    border-radius: 14px;
     padding: 36px 28px;
     margin: 40px 0 24px;
   }
@@ -82,47 +150,76 @@ sitemap: false
     margin-top: 0;
     text-align: center;
     font-size: 26px;
-    color: #111827;
+    color: var(--primary-dark);
   }
   .form-wrap .sub {
     text-align: center;
-    color: #6b7280;
+    color: var(--text-muted);
     margin-bottom: 28px;
   }
   .legal {
     font-size: 13px;
-    color: #6b7280;
+    color: var(--text-muted);
     text-align: center;
     margin-top: 12px;
+    margin-bottom: 0;
+  }
+  .final-claim {
+    text-align: center;
+    padding: 40px 24px 8px;
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--primary-dark);
+    line-height: 1.4;
+  }
+  .final-claim em {
+    font-style: normal;
+    color: var(--accent-dark);
   }
   .sig {
     margin-top: 48px;
     padding-top: 24px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border);
     font-size: 15px;
-    color: #4b5563;
+    color: var(--text-muted);
+    text-align: center;
   }
-  .sig strong { color: #111827; }
+  .sig strong { color: var(--primary-dark); }
   @media (max-width: 560px) {
-    h1 { font-size: 30px; }
-    .lede { font-size: 17px; }
     .wrap { padding: 40px 20px 72px; }
     .form-wrap, .box { padding: 24px 20px; }
+    .proof { padding: 28px 24px; }
+    .proof .number { font-size: 44px; }
+    .final-claim { font-size: 17px; padding: 24px 16px 8px; }
   }
 </style>
 </head>
 <body>
 
+<div class="brand-bar">
+  <div class="brand">
+    <span class="brand-mark">AC<sup>&trade;</sup></span>
+    <span class="brand-name">Amministratore Crescente</span>
+  </div>
+</div>
+
 <main class="wrap">
 
-  <div class="kicker">Lista d'attesa · Apertura 16 maggio 2026</div>
+  <div class="kicker">Lista d'attesa &middot; Apertura 16 maggio 2026</div>
 
-  <h1>Entra ora in lista d'attesa.<br>
-  Accedi con <em>7 giorni di anticipo</em> e una <em>quota e modalità di pagamento riservate</em>.</h1>
+  <h1>Costruisci il tuo <em>Studio a Trazione AI</em> con la MasterClaude di Amministratore Crescente.</h1>
 
   <p class="lede">
-    <strong>MasterClaude Amministratore Crescente</strong> apre ufficialmente sabato 16 maggio alle ore 9:00. Chi si iscrive oggi alla lista d'attesa riceve due vantaggi concreti rispetto al pubblico generale.
+    Entra ora in lista d'attesa. Accedi con <strong>7 giorni di anticipo</strong> e una <strong>quota e modalit&agrave; di pagamento riservate</strong>.
   </p>
+
+  <div class="proof">
+    <div class="number">46</div>
+    <h2>Amministratori gi&agrave; stanno spingendo sull'AI con Paolo</h2>
+    <p>
+      Sono i <strong>46 amministratori iscritti alle Membership di Amministratore Crescente</strong> tenute da Paolo: stanno facendo di pi&ugrave; in meno tempo grazie alla <strong>Metodologia ArchAI</strong>, creata da Paolo proprio per aiutarti ad automatizzare il tuo studio.
+    </p>
+  </div>
 
   <div class="box">
     <h2>Cosa ricevi iscrivendoti oggi</h2>
@@ -135,13 +232,18 @@ sitemap: false
 
   <div class="form-wrap">
     <h2>Iscriviti alla lista d'attesa</h2>
-    <p class="sub">Ti scriverò io, Paolo, sabato 16 maggio alle 9:00 con tutti i dettagli.</p>
+    <p class="sub">Ti scriver&ograve; io, Paolo, sabato 16 maggio alle 9:00 con tutti i dettagli.</p>
 
     <div class="kartra_optin_container6c4b761a28b734fe93831e3fb400ce87"></div>
     <script src="https://app.kartra.com/optin/pPD2erZbL8lF"></script>
 
-    <p class="legal">Nessun impegno di acquisto. L'iscrizione non comporta addebiti né obblighi.</p>
+    <p class="legal">Nessun impegno di acquisto. L'iscrizione non comporta addebiti n&eacute; obblighi.</p>
   </div>
+
+  <p class="final-claim">
+    Costruisci con noi il tuo <em>Studio a Trazione AI</em><br>
+    grazie alla MasterClaude di Amministratore Crescente.
+  </p>
 
   <div class="sig">
     <p><strong>Paolo Cesareo</strong><br>
