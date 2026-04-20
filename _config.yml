@@ -47,6 +47,7 @@ markdown: kramdown
 timezone: Europe/Rome
 exclude:
   - README.md
+  - HANDOVER.md
   - .gitignore
   - Gemfile
   - Gemfile.lock
