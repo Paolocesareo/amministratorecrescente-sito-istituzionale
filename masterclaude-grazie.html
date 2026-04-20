@@ -10,123 +10,162 @@ sitemap: false
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
 <title>Sei in lista d'attesa — MasterClaude</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
+  :root {
+    --primary: #0f2a4a;
+    --primary-dark: #081a30;
+    --accent: #D97757;
+    --accent-dark: #B5593A;
+    --bg: #ffffff;
+    --bg-alt: #f6f7f9;
+    --text: #1a1d23;
+    --text-muted: #5a6270;
+    --border: #e3e6ec;
+  }
   * { box-sizing: border-box; margin: 0; padding: 0; }
   html, body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-    line-height: 1.6;
-    color: #1a1a1a;
-    background: #fafafa;
+    font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.65;
+    color: var(--text);
+    background: var(--bg-alt);
     -webkit-font-smoothing: antialiased;
   }
+  .brand-bar {
+    background: var(--primary-dark);
+    border-bottom: 1px solid var(--border);
+    padding: 32px 24px;
+    text-align: center;
+  }
+  .brand-bar img {
+    height: 140px;
+    width: auto;
+    display: inline-block;
+  }
   .wrap {
-    max-width: 680px;
+    max-width: 720px;
     margin: 0 auto;
     padding: 56px 24px 96px;
   }
   .check {
-    width: 72px;
-    height: 72px;
-    background: #10b981;
+    width: 80px;
+    height: 80px;
+    background: var(--accent);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 32px;
     color: #fff;
-    font-size: 40px;
+    font-size: 44px;
     font-weight: 700;
     line-height: 1;
+    box-shadow: 0 6px 20px rgba(217, 119, 87, 0.35);
   }
   .kicker {
     text-transform: uppercase;
     letter-spacing: .12em;
     font-size: 13px;
-    font-weight: 600;
-    color: #10b981;
+    font-weight: 700;
+    color: var(--accent-dark);
     text-align: center;
     margin-bottom: 16px;
   }
   h1 {
-    font-size: 38px;
-    line-height: 1.15;
-    font-weight: 700;
-    letter-spacing: -0.02em;
+    font-size: clamp(2rem, 3.5vw + 1rem, 3.2rem);
+    line-height: 1.12;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    color: var(--primary-dark);
     text-align: center;
     margin-bottom: 24px;
   }
   h1 em {
     font-style: normal;
-    color: #1f6eb8;
+    color: var(--accent-dark);
   }
   .lede {
     font-size: 19px;
-    color: #374151;
+    color: var(--text-muted);
     text-align: center;
     margin-bottom: 40px;
+    line-height: 1.55;
   }
+  .lede strong { color: var(--text); }
   h2 {
     font-size: 22px;
     font-weight: 700;
+    color: var(--primary);
     margin: 0 0 16px;
     letter-spacing: -0.01em;
   }
-  p { margin-bottom: 16px; color: #1f2937; }
-  ul { margin: 0 0 0 20px; }
-  li { margin-bottom: 10px; color: #1f2937; }
-  li strong { color: #111827; }
+  p { margin-bottom: 16px; color: var(--text); }
+  ul { margin: 0 0 16px 22px; }
+  li { margin-bottom: 12px; color: var(--text); }
+  li strong { color: var(--primary-dark); }
   .box {
-    background: #fff;
-    border: 1px solid #e5e7eb;
-    border-radius: 12px;
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 14px;
     padding: 32px 28px;
-    margin: 40px 0;
+    margin: 32px 0;
     box-shadow: 0 1px 2px rgba(0,0,0,.03);
   }
-  .box h2 {
-    color: #1f6eb8;
+  .note {
+    text-align: center;
+    color: var(--text-muted);
+    font-size: 15px;
+    margin-top: 32px;
   }
+  .note strong { color: var(--primary-dark); }
   .sig {
     margin-top: 48px;
     padding-top: 24px;
-    border-top: 1px solid #e5e7eb;
+    border-top: 1px solid var(--border);
     font-size: 15px;
-    color: #4b5563;
+    color: var(--text-muted);
     text-align: center;
   }
-  .sig strong { color: #111827; }
+  .sig strong { color: var(--primary-dark); }
   @media (max-width: 560px) {
-    h1 { font-size: 30px; }
-    .lede { font-size: 17px; }
+    .brand-bar { padding: 24px 20px; }
+    .brand-bar img { height: 110px; }
     .wrap { padding: 40px 20px 72px; }
     .box { padding: 24px 20px; }
+    .check { width: 64px; height: 64px; font-size: 36px; margin-bottom: 24px; }
   }
 </style>
 </head>
 <body>
 
+<div class="brand-bar">
+  <img src="/assets/images/masterclaude-logo.png" alt="MasterClaude Amministratore Crescente">
+</div>
+
 <main class="wrap">
 
-  <div class="check">✓</div>
+  <div class="check">&check;</div>
 
   <div class="kicker">Iscrizione confermata</div>
 
   <h1>Sei dentro.<br>Ti scrivo io il <em>16 maggio</em>.</h1>
 
   <p class="lede">
-    La tua iscrizione alla lista d'attesa di <strong>MasterClaude Amministratore Crescente</strong> è registrata.
+    La tua iscrizione alla lista d'attesa di <strong>MasterClaude Amministratore Crescente</strong> &egrave; registrata.
   </p>
 
   <div class="box">
     <h2>Cosa succede adesso</h2>
     <ul>
-      <li><strong>Nelle prossime settimane</strong> riceverai alcune comunicazioni di avvicinamento: capirai perché pensiamo che per il tuo studio condominiale sia arrivato il momento giusto.</li>
-      <li><strong>Sabato 16 maggio alle 9:00</strong> ti arriverà una mail con tutti i dettagli di accesso, la quota scontata riservata ai waitlister e la possibilità di rateizzare mensilmente.</li>
+      <li><strong>Nelle prossime settimane</strong> riceverai alcune comunicazioni di avvicinamento: capirai perch&eacute; pensiamo che per il tuo studio condominiale sia arrivato il momento giusto.</li>
+      <li><strong>Sabato 16 maggio alle 9:00</strong> ti arriver&agrave; una mail con tutti i dettagli di accesso, la quota scontata riservata ai waitlister e la possibilit&agrave; di rateizzare mensilmente.</li>
       <li><strong>Hai 7 giorni di vantaggio</strong> sul pubblico generale: muoviti per primo se ti interessa.</li>
     </ul>
   </div>
 
-  <p style="text-align:center;color:#4b5563;font-size:15px;">
+  <p class="note">
     Nel frattempo, controlla che le mie mail non finiscano in spam.<br>
     Se non le vedi, cerca <strong>info@amministratorecrescente.com</strong> o aggiungimi alla rubrica.
   </p>
