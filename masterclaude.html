@@ -35,35 +35,15 @@ sitemap: false
     -webkit-font-smoothing: antialiased;
   }
   .brand-bar {
-    background: var(--bg);
+    background: var(--primary-dark);
     border-bottom: 1px solid var(--border);
-    padding: 18px 24px;
+    padding: 24px;
     text-align: center;
   }
-  .brand {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-  }
-  .brand-mark {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    background: var(--primary);
-    color: var(--accent);
-    font-weight: 800;
-    font-size: 16px;
-    border-radius: 8px;
-    letter-spacing: 0.02em;
-  }
-  .brand-mark sup { font-size: 9px; margin-left: 1px; color: var(--accent); }
-  .brand-name {
-    font-weight: 700;
-    font-size: 17px;
-    color: var(--primary);
-    letter-spacing: -0.01em;
+  .brand-bar img {
+    height: 96px;
+    width: auto;
+    display: inline-block;
   }
   .wrap {
     max-width: 720px;
@@ -197,10 +177,7 @@ sitemap: false
 <body>
 
 <div class="brand-bar">
-  <div class="brand">
-    <span class="brand-mark">AC<sup>&trade;</sup></span>
-    <span class="brand-name">Amministratore Crescente</span>
-  </div>
+  <img src="/assets/images/masterclaude-logo.png" alt="MasterClaude Amministratore Crescente">
 </div>
 
 <main class="wrap">
